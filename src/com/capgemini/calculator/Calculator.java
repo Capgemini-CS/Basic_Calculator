@@ -51,13 +51,8 @@ public class Calculator {
                 result = firstNumber * secondNumber;
                 break;
             case "/":
-                try {
-                    result = (double) firstNumber / secondNumber;
-                } catch (ArithmeticException e) {
-                    System.out.println("You can't divide by zero");
-                }
-
-
+                result = (double) firstNumber / secondNumber;
+                break;
         }
 
         System.out.println(result);
